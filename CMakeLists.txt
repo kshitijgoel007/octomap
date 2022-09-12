@@ -13,7 +13,7 @@ option(OCTOVIS_QT5 "Link Octovis against Qt5?" OFF)
 
 if(OCTOVIS_QT5)
 	# Compiling against QT5 requires C++11.
-	set(CMAKE_CXX_STANDARD 17)
+	set(CMAKE_CXX_STANDARD 11)
 endif(OCTOVIS_QT5)
 
 ADD_SUBDIRECTORY( octomap )
@@ -25,5 +25,3 @@ endif()
 if(BUILD_DYNAMICETD3D_SUBPROJECT)	
 	ADD_SUBDIRECTORY( dynamicEDT3D )
 endif()		
-
-
